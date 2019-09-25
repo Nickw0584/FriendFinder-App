@@ -202,7 +202,13 @@
                         ("q10").val()
                 ]
             };
-        }
+
+        app.post("api/friends", userData, function(data){
+            each("match-name").text(data.name);
+            each("match-img").attr("scr",data,photo);
+            
+        });
+        
        
     </script>
 </body>
