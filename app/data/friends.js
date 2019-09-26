@@ -1,24 +1,24 @@
 let friendData = [
-    {
-    
-    name:"",
-    photo:"",
-    scores:[
+  {
 
-    "",
-    "" ,
-     "",
-     "",
-     "",
-     "",
-     "",
-     "",
-     "",
-     ""
+    name: "",
+    photo: "",
+    scores: [
+
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  }
 ]
-},
-  
-  
+
+
   // Note how we export the array. This makes it accessible to other files using require.
   module.exports = friendData
-  

@@ -1,0 +1,24 @@
+{
+  "name": "friendfinder-app",
+  "version": "1.0.0",
+  "description": "This app is used as a persoanilty profile for someone looking for a best friend\r or a person that is looking for there significant other.",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nickw0584/FriendFinder-App.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nickw0584/FriendFinder-App/issues"
+  },
+  "homepage": "https://github.com/Nickw0584/FriendFinder-App#readme"
+}

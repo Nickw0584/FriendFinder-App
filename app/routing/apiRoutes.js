@@ -1,3 +1,4 @@
+
 const friendData = require("../data/friends");
 ///const newFriendData = require("../data/friends");
 
