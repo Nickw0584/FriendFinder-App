@@ -10,12 +10,12 @@ app.get("/api/friendData", function (req, res) {
 
 // POST method route
 app.post('/api/friendData', function (req, res) {
-    const bestFriendMatch = {
+    var bestFriendMatch = {
         name: "",
         photo: "",
         totalDiffrerence: 1000
     };
-})
+
 //parses users survey post got this from the 
 //liri bot that john helped me fix undertand on how to do.
 const userData = req.body;
@@ -29,7 +29,7 @@ let totalDifference = 0;
 // used to move throught the data of objects
 for (const i = 0; i < friendData.length - 1; i++) {
     console.log(friendData[i].name);
-}
+
 totalDifference = 0;
 
 for (const k = 0; k < 10; k++) {
@@ -42,10 +42,14 @@ for (const k = 0; k < 10; k++) {
         bestFriendMatch.name = friendData[i].name;
         bestFriendMatch.photo = friendData[i].photo;
         bestFriendMatch.totalDiffrerence = friendDifference;
+    }
+}
+}
+
 
         friendData.push(userData);
         res.json(bestFriendMatch);
 
 
-    }
-}};
+    });
+};
