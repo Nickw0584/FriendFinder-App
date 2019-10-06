@@ -11,4 +11,4 @@ a process a there normal job.
 
 This app is open so it would be maintained by the comunnity that use it and would be open to frequent updates from the users to profect the process.
 
-https://git.heroku.com/expression-app.git
+ https://expression-app.herokuapp.com/
