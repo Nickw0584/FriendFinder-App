@@ -1,14 +1,15 @@
 
-const friendData = require("../data/friends");
+const friendData = require("../data/friends.js");
 ///const newFriendData = require("../data/friends");
 
+module.exports = Function(app){
 
-app.get("/api/friends", function (req, res) {
+app.get("/api/friendData", function (req, res) {
     return res.json(friendData);
 });
 
 // POST method route
-app.post('/api/friends', function (req, res) {
+app.post('/api/friendData', function (req, res) {
     const bestFriendMatch = {
         name: "",
         photo: "",
@@ -44,5 +45,7 @@ for (const k = 0; k < 10; k++) {
 
         friendData.push(userData);
         res.json(bestFriendMatch);
+
+
     }
-}
+}};
