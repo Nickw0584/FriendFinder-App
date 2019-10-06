@@ -4,6 +4,7 @@
   "description": "This app is used as a persoanilty profile for someone looking for a best friend\r or a person that is looking for there significant other.",
   "main": "server.js",
   "dependencies": {
+    "eslint": "^6.5.1",
     "express": "^4.17.1"
   },
   "devDependencies": {},
