@@ -2,7 +2,7 @@
 const friendData = require("../data/friends.js");
 ///const newFriendData = require("../data/friends");
 
-module.exports = Function(app){
+module.exports = function(app){
 
 app.get("/api/friendData", function (req, res) {
     return res.json(friendData);
