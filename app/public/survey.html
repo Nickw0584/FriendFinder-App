@@ -163,13 +163,14 @@
         </select>
     </div>
 
-    <button type="submit" class="btn" id="submit">"Submit"</button>
+    <button type="submit" class="btn" id="submit" onclick="submitSurvey()">"Submit"</button>
     
     <script type="text/javascript">
     /*taken from the activities 14 and 15 of 13-expressons*/
-    document.getElementById("submit-btn").on("click", function(event) {
+    function submitSurvey(event) {
         event.prevent.Default();
-
+        validateform();
+    }
     function validateform(){
         let Valid=true;
         ("form-control").each(function(){
@@ -178,13 +179,14 @@
             }
         }
         )};
-        document.getElementById(".chosen-select").each(function(){
+        document.getElementById(".chosen-select").innerHTML += index + ":" + item;(function(){
             if((this).val() === ""){
                 isValid = false;    
             }
+            return isValid;
         });
-        return isValid;
-    });
+
+        
         if(validateForm()){
             userData = {
                 name: ("name").val(),
@@ -209,7 +211,7 @@
             
         });
         }
-       
+    
     </script>
 </body>
 
