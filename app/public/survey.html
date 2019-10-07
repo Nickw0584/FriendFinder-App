@@ -32,7 +32,7 @@
 </head>
 
 <body>
-
+    <form id="form">
     <div class="form-group">
         <h1>Question 1</h1>
         <h5>Do you consider yourself a good communicator?</h5>
@@ -161,6 +161,8 @@
             <option value="4">4</option>
             <option value="5">5 (Strongly Agree)</option>
         </select>
+        </div>
+    </form>
     </div>
 
     <button type="submit" class="btn" id="submit" onclick="submitSurvey()">"Submit"</button>
@@ -168,8 +170,8 @@
     <script type="text/javascript">
     /*taken from the activities 14 and 15 of 13-expressons*/
     function submitSurvey(event) {
-        event.prevent.Default();
-        validateform();
+        // event.preventDefault();
+        validateForm();
     }
     // function validateForm(){
     //     let Valid=true;
@@ -181,7 +183,8 @@
     //     )};
         function chosen(){
         var selected=
-        document.getElementById(".chosen-select");
+        document.getElementById(".chosen-select").value();
+
             if((this).val() === ""){
                 isValid = false;    
             }
@@ -190,7 +193,11 @@
 
         function validateForm(){
         let Valid=true;
-        (".form-control").each(function(){
+        console.log("first");
+        let surveyAnswers = document.getElementsByClassName("form-control").value;
+        console.log("answer values", surveyAnswers);
+        for(i = 0; i < surveyAnswers.length; i ++) {
+            console.log("second");
             if((this).val() === "") {
                 isValid = false;
             }
@@ -219,7 +226,7 @@
             
         });
         
-        }})};
+        }}};
     
     </script>
 </body>
